@@ -14,17 +14,13 @@ A beautiful Next.js frontend for the Netflix AI Search backend, featuring semant
 ### Prerequisites
 
 - Node.js 18+ installed
-- Backend server running (see `../netflix_ai_search/`)
+- Backend server running 
 
 ### Start the Backend
 
-First, make sure the backend is running:
+First, run the backend server in this repo:
 
-```bash
-cd ../netflix_ai_search
-source venv/bin/activate
-uvicorn api.main:app --reload --port 8000
-```
+https://github.com/wintvue/Netflix_AI_Search
 
 ### Start the Frontend
 
@@ -34,14 +30,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Environment Variables
-
-Create a `.env.local` file (optional):
-
-```
-NEXT_PUBLIC_API_URL=http://localhost:8000
-```
 
 ## Project Structure
 
