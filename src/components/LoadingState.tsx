@@ -45,6 +45,25 @@ export function MovieCardSkeleton() {
   );
 }
 
+export function AIOverviewSkeleton() {
+  return (
+    <div className="bg-[#1a1a1a] rounded p-4 animate-pulse">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-8 h-8 bg-zinc-800 rounded" />
+        <div>
+          <div className="h-4 w-24 bg-zinc-800 rounded" />
+          <div className="h-3 w-32 bg-zinc-800 rounded mt-1" />
+        </div>
+      </div>
+      <div className="space-y-2">
+        <div className="h-4 bg-zinc-800 rounded w-full" />
+        <div className="h-4 bg-zinc-800 rounded w-4/5" />
+        <div className="h-4 bg-zinc-800 rounded w-3/5" />
+      </div>
+    </div>
+  );
+}
+
 export function Spinner({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
   const sizeClasses = {
     sm: "w-4 h-4 border-2",
