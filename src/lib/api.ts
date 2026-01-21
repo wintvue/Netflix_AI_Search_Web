@@ -23,12 +23,11 @@ export function searchMoviesStream(
   } = {},
   callbacks: SearchStreamCallbacks
 ): EventSource {
-  const { k = 10, alpha = 0.5 } = options;
+  const { k = 24 } = options;
 
   const params = new URLSearchParams({
     q: query,
     k: k.toString(),
-    alpha: alpha.toString(),
     ai_overview: "true",
     stream: "true",
   });

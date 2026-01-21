@@ -41,7 +41,7 @@ export default function Home() {
 
         eventSourceRef.current = searchMoviesStream(
           query,
-          { k: 10 },
+          { k: 24 },
           {
             onResults: (response) => {
               // Results arrive immediately - display them!
@@ -67,7 +67,7 @@ export default function Home() {
         );
       } else {
         // Use regular fetch for non-AI searches
-        searchMovies(query, { k: 10, aiOverview: false })
+        searchMovies(query, { k: 24, aiOverview: false })
           .then((result) => {
             setSearchResult(result);
           })
